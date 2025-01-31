@@ -7,7 +7,7 @@ public class Druide extends Personnage{
 	private int FORCE_POTION_MIN;
 	private int FORCE_POTION_MAX;
 	private int forcePotion;
-	
+	private int Permisàpoint;
 	public Druide(String nom, int force_potion_max, int force_potion_min) {
 		super(nom);
 		this.FORCE_POTION_MAX=force_potion_max;
