@@ -20,7 +20,7 @@ public class Test {
 //		minus.sEquiper(bouclier);
 //		minus.sEquiper(casque);
 
-		Druide panoramix=new Druide(10,5);
+		Druide panoramix=new Druide("Panoramix", 10,5);
 		panoramix.parler("Je vais aller préparer une petite potion");
 		panoramix.preparerPotion();
 		

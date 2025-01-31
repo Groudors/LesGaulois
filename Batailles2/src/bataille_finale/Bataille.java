@@ -1,4 +1,4 @@
-package personnages;
+package bataille_finale;
 import personnages.*;
 import java.util.Random;
 public class Bataille {
@@ -6,7 +6,14 @@ public class Bataille {
 	private Romain[] equipeRomaine=new Romain[3] ;
 	private int nbRomain=0;
 	private int nbGaulois=0;
+	private int nbVictoireRomaine =0;
+	private int nbVictoireGauloise =0;
+	private Narrateur presentateur;
 	
+	public Bataille(Narrateur narrateur) {
+		this.presentateur=narrateur;
+		presentateur.afficherDecor();
+	}
 	
 	public void ajouterGaulois(Gaulois gaulois) {
 		int i=0;
@@ -70,6 +77,36 @@ public class Bataille {
 				i+=1;
 		}
 		}
+	}
+	
+	public void combattre() {
+		Combattant gaulois = equipeGauloise[nbGaulois - 1];
+		Combattant romain = equipeRomaine[nbRomain - 1];
+		boolean vainqueur = false;
+		do {
+			romain.frapper(gaulois);
+			if (gaulois.isKO()) {
+				vainqueur = true;
+				nbGaulois--;
+				nbVictoireRomaine++;
+			} else {
+				gaulois.frapper(romain);
+				if (romain.isKO()) {
+					vainqueur = true;
+					nbRomain--;
+					nbVictoireGauloise++;
+				}
+			}
+		} while (!vainqueur);
+	}
+
+	public boolean resteCombattant() {
+		return nbGaulois != 0 && nbRomain != 0;
+	}
+	
+	public void afficherVainqueur() {
+		presentateur.afficherVainqueur(nbVictoireGauloise, nbVictoireRomaine);
+		
 	}
 	
 	

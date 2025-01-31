@@ -12,5 +12,13 @@ public abstract class Combattant extends Personnage{
 	public abstract void recevoir_coup(int coup);
 
 	public abstract void frapper(Combattant combattant);
-
+	
+	public boolean isKO() {
+		return force <= 0;
+	}
+	
+	public int getForce() {
+		return force;
+	}
+	
 }

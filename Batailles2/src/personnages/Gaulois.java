@@ -19,9 +19,7 @@ public class Gaulois extends Combattant{
 	public void parler(String texte) {
 		System.out.println("Le gaulois " + getNom()+ " : « " + texte + "»");
 	}
-	public int getForce() {
-		return force;
-	}
+
 	public int getPotion() {
 		return effetPotion;
 	}

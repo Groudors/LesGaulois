@@ -1,4 +1,5 @@
 package test_fonctionnel;
+import bataille_finale.Bataille;
 import personnages.*;
 
 public class TestIntermediaire {

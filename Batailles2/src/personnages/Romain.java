@@ -11,10 +11,7 @@ public class Romain extends Combattant{
 		return nom;
 	}
 	
-	public int getForce() {
-		return force;
-	}
-	
+
 
 	public String prendreParole() {
 		return getNom() + " : ";
