@@ -1,6 +1,6 @@
 package bataille_finale;
 
-public class Foret implements Narrateur{
+public class Foret implements Narrateur , Livre{
 
 	@Override
 	public void afficherDecor() {

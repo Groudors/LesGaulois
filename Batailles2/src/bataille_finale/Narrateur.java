@@ -11,5 +11,8 @@ public interface Narrateur {
 		System.out.println("Toute la Gaule est occupée par les Romains...");
 		System.out.println("Toute ? Non ! Un village peuplé d'irréductibles Gaulois résiste encore et toujours à l'envahisseur.");
 		}
-
+	
+	default void affichertitre() {
+		System.out.println("Le dernier Combat ");
+	}
 }

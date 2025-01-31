@@ -17,5 +17,11 @@ public class Amphitheatre implements Narrateur{
 		}
 	}
 	
+	@Override
+	public void afficherDebutLivre() {
+		System.out.println( "Nous sommes en 50 avant Jésus-Christ.");
+		System.out.println("César a pris en otage Idéfix et la seule façon pour eux de rentrer tous ensemble est de se battre dans l'arène de l'amphithéâtre de Rome.");
+	}
+	
 
 }

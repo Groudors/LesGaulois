@@ -16,7 +16,9 @@ public class TestArmoricae {
 		Romain chorus = new Romain("Chorus", 8);
 		Romain faitexcus = new Romain("Faitexcus", 7);
 		
-		Narrateur foret = new Amphitheatre();
+		Narrateur foret = new Foret();
+		foret.affichertitre();
+		foret.afficherDebutLivre();
 		
 		Bataille bataille = new Bataille(foret);
 		bataille.ajouterGaulois(obelix);
