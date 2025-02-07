@@ -15,17 +15,17 @@ public class TestIntermediaire {
 		Equipement bouclier=Equipement.BOUCLIER;
 		Equipement casque=Equipement.CASQUE;
 		
-		Bataille bataille=new Bataille();
-		bataille.ajouterGaulois(abraracourcix);
-		bataille.ajouterGaulois(asterix);
-		bataille.ajouterGaulois(obelix);
-		
-		
-		bataille.ajouterRomain(faitexcus);
-		bataille.ajouterRomain(minus);
-		bataille.ajouterRomain(chorus);	
-		
-		bataille.afficherEquipes();
+//		Bataille bataille=new Bataille();
+//		bataille.ajouterGaulois(abraracourcix);
+//		bataille.ajouterGaulois(asterix);
+//		bataille.ajouterGaulois(obelix);
+//		
+//		
+//		bataille.ajouterRomain(faitexcus);
+//		bataille.ajouterRomain(minus);
+//		bataille.ajouterRomain(chorus);	
+//		
+//		bataille.afficherEquipes();
 		
 //		bataille.bagarre();
 		

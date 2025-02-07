@@ -10,9 +10,8 @@ public class Bataille {
 	private int nbVictoireGauloise =0;
 	private Narrateur presentateur;
 	
-	public Bataille(Narrateur narrateur) {
-		this.presentateur=narrateur;
-		presentateur.afficherDecor();
+	public Bataille(Presentateur presentateur) {
+		this.presentateur=presentateur;
 	}
 	
 	public void ajouterGaulois(Gaulois gaulois) {

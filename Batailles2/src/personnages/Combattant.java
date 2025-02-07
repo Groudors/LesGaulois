@@ -16,9 +16,4 @@ public abstract class Combattant extends Personnage{
 	public boolean isKO() {
 		return force <= 0;
 	}
-	
-	public int getForce() {
-		return force;
-	}
-	
 }

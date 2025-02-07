@@ -1,11 +1,6 @@
 package bataille_finale;
 
-public class Foret implements Narrateur , Livre{
-
-	@Override
-	public void afficherDecor() {
-		System.out.println("Dans une sombre forêt en Armoricae une bagarre va éclater.");
-	}
+public class Foret implements Presentateur{
 
 	@Override
 	public void afficherVainqueur(int nbVictoireGauloise, int nbVictoireRomaine) {
@@ -16,5 +11,18 @@ public class Foret implements Narrateur , Livre{
 			System.out.println("Les Gaulois vont pouvoir célébrer leur victoire autour d'un banquet");
 		}
 	}
+
+	public void afficherTitre() {
+		Presentateur.super.afficherTitre();
+	}
+
+	@Override
+	public void afficherDecor() {
+		// TODO Je ne sais pas pourquoi c'est comme ça, donc je n'y touche pas
+		
+	}
+
+
+
 
 }
